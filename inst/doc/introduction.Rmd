@@ -9,7 +9,7 @@ vignette: >
     %\VignetteEncoding{UTF-8}
 ---
 
-Thanks to the [Superior Electoral Court (TSE)](https://dadosabertos.tse.jus.br/), any person with an internet connection can access a wide range of Brazil's electoral data. However, the TSE website used to lack a user-friendly interface, and the data was not available in a tidy format until very recently, which made it difficult to use these data in `R` for research purposes. In a nutshell, this was our main motivation to develop the `electionsBR`, an `R` package specifically designed to retrieve and clean Brazilian electoral data directly from the TSE website, making it easy and fast to obtain electoral data in a tidy format.
+Thanks to the Superior Electoral Court (TSE), any person with an internet connection can access a wide range of Brazil's electoral data. However, the TSE website used to lack a user-friendly interface, and the data was not available in a tidy format until very recently, which made it difficult to use these data in `R` for research purposes. In a nutshell, this was our main motivation to develop the `electionsBR`, an `R` package specifically designed to retrieve and clean Brazilian electoral data directly from the TSE website, making it easy and fast to obtain electoral data in a tidy format.
 
 At its core, `electionsBR` provides a comprehensive set of functions that download and clean various types of information using modern backends available in `R` to handle data retrieving, importing, and transforming. With this, users can access data that includes candidates' personal and professional backgrounds, parties' electoral performances, electoral coalitions, available seats under dispute, and voters' profiles.
 
@@ -150,7 +150,6 @@ Notice that the input must be a `character` vector -- with case insensitive stat
 ## How Elections in Brazil Work
 
 
-All the data retrieved by `electionsBR` is made available online by the [Brazilian Superior Electoral Court (TSE)](https://international.tse.jus.br/en). As stated on the [English version of the TSE website](https://international.tse.jus.br/en), elections in Brazil are organized in the following way:
 
 - Federal elections and state elections are conducted simultaneously, including the election of the president and vice president, senators and alternates, governors and vice governors, federal deputies, and state deputies. Two years later, municipal elections are held for mayors, vice mayors, and city councils. It is important to note that the distinction is based on the federal level, not on the branches of government. The executive and legislative representatives are elected at the same time.
 
@@ -162,7 +161,7 @@ All the data retrieved by `electionsBR` is made available online by the [Brazili
 ### Official documentation
 
 
-The internal documentation of the `electionsBR` package is based entirely on the official documentation provided by the TSE in the [Repositório de Dados Eleitorais](https://dadosabertos.tse.jus.br/). To access the documentation for each type of electoral data, set the `readme_pdf` argument in the `elections_tse` to `TRUE` and the package will save the relevant documentation in PDF format.
+The internal documentation of the `electionsBR` package is based entirely on the official documentation provided by the TSE in the Repositório de Dados Eleitorais. To access the documentation for each type of electoral data, set the `readme_pdf` argument in the `elections_tse` to `TRUE` and the package will save the relevant documentation in PDF format.
 
 
 ## Disclaimer

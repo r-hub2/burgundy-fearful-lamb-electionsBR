@@ -12,7 +12,7 @@
 
 <meta name="author" content="Fernando Meireles, Denisson Silva, Beatriz Costa" />
 
-<meta name="date" content="2024-11-17" />
+<meta name="date" content="2024-11-19" />
 
 <title>Introduction to the electionsBR package</title>
 
@@ -341,20 +341,20 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h1 class="title toc-ignore">Introduction to the electionsBR
 package</h1>
 <h4 class="author">Fernando Meireles, Denisson Silva, Beatriz Costa</h4>
-<h4 class="date">2024-11-17</h4>
+<h4 class="date">2024-11-19</h4>
 
 
 
-<p>Thanks to the <a href="https://dadosabertos.tse.jus.br/">Superior
-Electoral Court (TSE)</a>, any person with an internet connection can
-access a wide range of Brazil’s electoral data. However, the TSE website
-used to lack a user-friendly interface, and the data was not available
-in a tidy format until very recently, which made it difficult to use
-these data in <code>R</code> for research purposes. In a nutshell, this
-was our main motivation to develop the <code>electionsBR</code>, an
-<code>R</code> package specifically designed to retrieve and clean
-Brazilian electoral data directly from the TSE website, making it easy
-and fast to obtain electoral data in a tidy format.</p>
+<p>Thanks to the Superior Electoral Court (TSE), any person with an
+internet connection can access a wide range of Brazil’s electoral data.
+However, the TSE website used to lack a user-friendly interface, and the
+data was not available in a tidy format until very recently, which made
+it difficult to use these data in <code>R</code> for research purposes.
+In a nutshell, this was our main motivation to develop the
+<code>electionsBR</code>, an <code>R</code> package specifically
+designed to retrieve and clean Brazilian electoral data directly from
+the TSE website, making it easy and fast to obtain electoral data in a
+tidy format.</p>
 <p>At its core, <code>electionsBR</code> provides a comprehensive set of
 functions that download and clean various types of information using
 modern backends available in <code>R</code> to handle data retrieving,
@@ -501,10 +501,6 @@ valid inputs).</p>
 </div>
 <div id="how-elections-in-brazil-work" class="section level2">
 <h2>How Elections in Brazil Work</h2>
-<p>All the data retrieved by <code>electionsBR</code> is made available
-online by the <a href="https://international.tse.jus.br/en">Brazilian
-Superior Electoral Court (TSE)</a>. As stated on the <a href="https://international.tse.jus.br/en">English version of the TSE
-website</a>, elections in Brazil are organized in the following way:</p>
 <ul>
 <li><p>Federal elections and state elections are conducted
 simultaneously, including the election of the president and vice
@@ -532,9 +528,8 @@ the entire group of candidates from the party or alliance.</p></li>
 <h3>Official documentation</h3>
 <p>The internal documentation of the <code>electionsBR</code> package is
 based entirely on the official documentation provided by the TSE in the
-<a href="https://dadosabertos.tse.jus.br/">Repositório de Dados
-Eleitorais</a>. To access the documentation for each type of electoral
-data, set the <code>readme_pdf</code> argument in the
+Repositório de Dados Eleitorais. To access the documentation for each
+type of electoral data, set the <code>readme_pdf</code> argument in the
 <code>elections_tse</code> to <code>TRUE</code> and the package will
 save the relevant documentation in PDF format.</p>
 </div>
@@ -551,19 +546,19 @@ issues with the data that users may encounter.</p>
 <h2>How to cite</h2>
 <p>To cite <code>electionsBR</code> in publications, please use:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">citation</span>(<span class="st">&quot;electionsBR&quot;</span>)</span></code></pre></div>
-<pre><code>## To cite package &#39;electionsBR&#39; in publications use:
+<pre><code>## Para citar o pacote &#39;electionsBR&#39; em publicações use:
 ## 
 ##   Meireles, Fernando; Silva, Denisson; Costa, Beatriz. (2016).
 ##   electionsBR: R functions to download and clean Brazilian electoral
-##   data. URL: http://electionsbr.com/
+##   data. URL: http://electionsbr.com/novo/
 ## 
-## A BibTeX entry for LaTeX users is
+## Uma entrada BibTeX para usuários(as) de LaTeX é
 ## 
 ##   @Manual{,
 ##     title = {{electionsBR}: {R} Functions to Download and Clean {B}razilian Electoral Data},
 ##     author = {Fernando Meireles and Denisson Silva and Beatriz Costa},
 ##     year = {2016},
-##     url = {http://electionsbr.com/},
+##     url = {http://electionsbr.com/novo/},
 ##     encoding = {UTF-8},
 ##   }</code></pre>
 </div>
